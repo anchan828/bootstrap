@@ -142,4 +142,20 @@
     width: auto;
   }
 
+  // ALERTS
+  // ------
+  // Show page alert as normal alert
+  .page-alert {
+    position: static;
+    width: auto;
+    .alert {
+      width: auto;
+      margin-left: 0;
+      border-top-width: 1px;
+      .border-radius(4px);
+    }
+  }
+  body > .page-alert {
+    position: static;
+  }
 }
