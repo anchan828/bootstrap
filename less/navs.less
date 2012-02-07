@@ -286,10 +286,14 @@
 }
 
 // Make the tab content grow correctly
+.tabbable > .nav-tabs {
+  margin: 0;
+}
 .tab-content {
   border-style: solid;
   border-color: #ddd;
   border-width: 0px;
+  padding: 18px 0 0 0;
 }
 
 // Remove border on bottom, left, right
@@ -439,6 +443,9 @@
 }
 .tabs-right.tabbable-bordered {
   border-width: 0 0 0 1px;
+  > .nav-tabs {
+    right: 1px;
+  }
   > .tab-content {
     border-width: 1px 1px 1px 0;
     padding: 20px 20px 10px 20px;
