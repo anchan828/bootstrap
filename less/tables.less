@@ -132,6 +132,10 @@ table {
   tbody tr:hover th {
     background-color: @tableBackgroundHover;
   }
+  tbody tr[data-href] td {
+    cursor: pointer;
+    &.nohref { cursor: auto; }
+  }
 }
 
 
