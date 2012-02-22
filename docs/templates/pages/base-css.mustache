@@ -1075,6 +1075,9 @@ on multiple lines
   <h2>{{_i}}Extending form controls{{/i}}</h2>
   <div class="row">
     <div class="span4">
+      <h3>Editor textarea</h3>
+      <p>Add <code>.editor</code> to any textarea or <code>.uneditable-textarea</code> to create a larger field for content editing. If you're using <a href="http://ckeditor.com/" title="CKEditor">CKEditor</a>, also add <code>.editor-ckeditor</code>.</p>
+      <hr>
       <h3>{{_i}}Prepend &amp; append inputs{{/i}}</h3>
       <p>{{_i}}Input groups&mdash;with appended or prepended text&mdash;provide an easy way to give more context for your inputs. Great examples include the @ sign for Twitter usernames or $ for finances.{{/i}}</p>
       <hr>
@@ -1128,6 +1131,11 @@ on multiple lines
               <input class="input-small" type="text" placeholder=".input-small">
               <input class="input-medium" type="text" placeholder=".input-medium">
               <p class="help-block">{{_i}}You may also use static classes that don't map to the grid, adapt to the responsive CSS styles, or account for varying types of controls (e.g., <code>input</code> vs. <code>select</code>).{{/i}}</p>
+            </div>
+          </div>
+            <label class="control-label">Editor</label>
+            <div class="controls">
+              <textarea class="editor"></textarea>
             </div>
           </div>
           <div class="control-group">
