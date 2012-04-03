@@ -2,7 +2,7 @@
       ================================================== -->
       <header class="jumbotron subhead" id="overview">
         <h1>{{_i}}Javascript for Bootstrap{{/i}}</h1>
-        <p class="lead">{{_i}}Bring Bootstrap's components to life&mdash;now with 15 custom <a href="http://jquery.com/" target="_blank">jQuery</a> plugins.{{/i}}
+        <p class="lead">{{_i}}Bring Bootstrap's components to life&mdash;now with 16 custom <a href="http://jquery.com/" target="_blank">jQuery</a> plugins.{{/i}}
         <div class="subnav">
           <ul class="nav nav-pills">
             <li><a href="#javascript">{{_i}}All plugins{{/i}}</a></li>
@@ -16,10 +16,16 @@
             <li><a href="#buttons">{{_i}}Button{{/i}}</a></li>
             <li><a href="#collapse">{{_i}}Collapse{{/i}}</a></li>
             <li><a href="#carousel">{{_i}}Carousel{{/i}}</a></li>
-            <li><a href="#typeahead">{{_i}}Typeahead{{/i}}</a></li>
-            <li><a href="#placeholder">{{_i}}Placeholder{{/i}}</a></li>
-            <li><a href="#inputmask">{{_i}}Input mask{{/i}}</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{_i}}Input{{/i}} <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#typeahead">{{_i}}Typeahead{{/i}}</a></li>
+                <li><a href="#placeholder">{{_i}}Placeholder{{/i}}</a></li>
+                <li><a href="#inputmask">{{_i}}Inputmask{{/i}}</a></li>
+              </ul>
+            </li>
             <li><a href="#table-href">{{_i}}Table href{{/i}}</a></li>
+            <li><a href="#fileupload">{{_i}}Fileupload{{/i}}</a></li>
           </ul>
         </div>
       </header>
@@ -29,7 +35,7 @@
       ================================================== -->
       <section id="javascript">
         <div class="page-header">
-          <h1>{{_i}}jQuery plugins{{/i}} <small>{{_i}}A dozen Bootstrap plugins to get you started{{/i}}</small></h1>
+          <h1>{{_i}}jQuery plugins{{/i}} <small>{{_i}}A set of Bootstrap plugins to get you started{{/i}}</small></h1>
         </div>
       <div class="row">
         <div class="span3">
@@ -121,6 +127,12 @@
           <label>
             <h3><a href="./javascript.html#table-href">Table href</a></h3>
             <p>{{_i}}A simple plugin, to turn table rows into a links.{{/i}}</p>
+          </label>
+        </div>
+        <div class="span3">
+          <label>
+            <h3><a href="./javascript.html#fileupload">Fileupload</a></h3>
+            <p>{{_i}}Create a visually appealing file or image upload element.{{/i}}</p>
           </label>
         </div>
         <div class="span3">
@@ -1489,7 +1501,7 @@ $('.carousel').carousel({
     ================================================== -->
     <section id="inputmask">
       <div class="page-header">
-        <h1>{{_i}}Input mask{{/i}} <small>bootstrap-inputmask.js</small></h1>
+        <h1>{{_i}}Inputmask{{/i}} <small>bootstrap-inputmask.js</small></h1>
       </div>
       <div class="row">
         <div class="span3 columns">
@@ -1572,7 +1584,7 @@ $('.carousel').carousel({
         </div>
 
         <div class="span9 columns">
-          <h2>{{_i}}Examples file upload element{{/i}}</h2>
+          <h2>{{_i}}Examples file upload elements{{/i}}</h2>
           <div class="row">
             <div class="span4 columns">
               <div class="fileupload fileupload-new" data-fileupload="file">
@@ -1589,11 +1601,10 @@ $('.carousel').carousel({
               </div>
             </div>
           </div>
-          <hr>
+          <br/>
 
-          <h2>{{_i}}Example image upload elements{{/i}}</h2>
-          <p>{{_i}}Using the given elements, you can layout the upload widget the way you want, either with a fixed <code>width</code> and <code>height</code> or with <code>max-width</code>
-            and <code>max-height</code>.{{/i}}</p>
+          <h3>{{_i}}Image upload elements{{/i}}</h2>
+          <p>{{_i}}When uploading an image, it's possible to show a thumbnail instead of the filename.{{/i}}</p>
           <div class="row">
             <div class="span3 columns">
               <div class="fileupload fileupload-new" data-fileupload="image">
@@ -1635,7 +1646,7 @@ $('.carousel').carousel({
 
           <h3>{{_i}}Markup{{/i}}</h3>
           <p>{{_i}}Use the <code>data-fileupload</code> attribute to register the file upload widget. The main container should either have the <code>.fileupload-new</code> class for a new record or if the record
-            does not have file or <code>.fileupload-exists</code> if an existing file is present. Elements inside the container with the <code>.fileupload-new</code> and <code>fileupload-exists</code>
+            does not have file or <code>.fileupload-exists</code> if an existing file is present. Elements inside the container with the <code>.fileupload-new</code> and <code>.fileupload-exists</code>
             class will be shown or hidden based on the current state. The content of <code>.fileupload-preview</code> is replaced when a file is selected. Implement a button to clear
             the file with <code>data-dismiss="fileupload"</code>.{{/i}}</p>
           
@@ -1659,6 +1670,7 @@ $('.carousel').carousel({
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
+          <p>{{_i}}Using the given elements, you can layout the upload widget the way you want, either with a fixed <code>width</code> and <code>height</code> or with <code>max-width</code> and <code>max-height</code>.{{/i}}</p>
         </div>
       </div>
     </section>
