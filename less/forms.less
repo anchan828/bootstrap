@@ -558,6 +558,15 @@ textarea.editor-html {
 // ---------------
 
 .uneditable-form {
+  input[disabled],
+  textarea[disabled],
+  select[disabled] {
+    cursor: auto;
+  }
+  .uneditable-input[disabled],
+  .uneditable-textarea[disabled] {
+    cursor: text;
+  }
   .form-actions {
     background-color: transparent;
   }
