@@ -574,26 +574,19 @@ form.well {
   margin-bottom: 18px;
   list-style: none;
 }
-.the-icons i {
-  display: block;
-}
-.the-icons i:after {
-  content: attr(class);
-  font-style: normal;
-}
 .the-icons i[class*="icon-"] {
   margin-bottom: 5px;
 }
 .the-icons i[class*="icon-"]:hover {
   background-color: rgba(255,0,0,.25);
 }
-.the-icons i[class*="icon-"]:after {
-  margin-left: 20px;
+.the-icons i[class*="iconic-"] {
   display: block;
-  width: 140px;
 }
 .the-icons i[class*="iconic-"]:after {
   margin-left: 6px;
+  content: attr(class);
+  font-style: normal;
 }
 #javascript input[type=checkbox] {
   position: relative;
