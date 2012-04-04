@@ -29,7 +29,7 @@ $(function () {
           var name = input.attr('name');
           if (input.length == 0) return;
           
-          var preview = $(this).find('.fileupload-preview').not('.fileupload-new');
+          var preview = $(this).find('.fileupload-preview');
           if (preview.css('display') != 'inline' && preview.css('height') != 'none') preview.css('line-height', preview.css('height'));
 
           var remove = $(this).find('*[data-dismiss="fileupload"]');
