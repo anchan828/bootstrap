@@ -270,26 +270,13 @@
   border-color: #ddd;
   border-width: 0px;
 }
+
+// Make the tab content grow correctly
+.tabbable > .nav-tabs {
+  margin: 0;
+}
 .tab-content {
   overflow: auto; // prevent content from running below tabs
-}
-
-// Make the tab content grow correctly
-.tabbable > .nav-tabs {
-  margin: 0;
-}
-.tab-content {
-  border-style: solid;
-  border-color: #ddd;
-  border-width: 0px;
-  padding: 18px 0 0 0;
-}
-
-// Make the tab content grow correctly
-.tabbable > .nav-tabs {
-  margin: 0;
-}
-.tab-content {
   border-style: solid;
   border-color: #ddd;
   border-width: 0px;
@@ -360,8 +347,10 @@ body > .container.tabbable > .nav-tabs {
     .border-radius(4px 4px 0 0);
   }
 }
-
-
+body > .container.tabs-below.tabbable-bodered > .tab-content {
+  border-top-width: 0;
+  .border-radius(0)
+}
 
 
 // LEFT & RIGHT
@@ -423,6 +412,10 @@ body > .container.tabbable > .nav-tabs {
     .border-radius(0 4px 4px 0);
   }
 }
+body > .container.tabs-left.tabbable-bodered > .tab-content {
+  border-top-width: 0;
+  .border-radius(0 0 4px 0);
+}
 
 // Tabs on the right
 .tabs-right > .nav-tabs {
@@ -453,4 +446,8 @@ body > .container.tabbable > .nav-tabs {
     padding: 20px 20px 10px 20px;
     .border-radius(4px 0 0 4px);
   }
+}
+body > .container.tabs-left.tabbable-bodered > .tab-content {
+  border-top-width: 0;
+  .border-radius(0 0 0 4px);
 }
