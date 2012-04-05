@@ -1,6 +1,6 @@
 /* ============================================================
- * bootstrap-table-href.js v2.0.0
- * http://jasny.github.com/bootstrap/javascript.html#table-href
+ * bootstrap-rowlink.js v2.0.2
+ * http://jasny.github.com/bootstrap/javascript.html#rowlink
  * ============================================================
  * Copyright 2011 Jasny BV, Netherlands.
  *
@@ -20,7 +20,20 @@
 /* TODO: Turn this into a proper jquery plugin */
 
 $(function () {
-    $('tr[data-href] > td').not('.nohref').click(function() {
-        window.location = $(this).parent().attr('data-href');
+    $('*[data-rowlink]').each(function () {
+        var target = $(this).attr('data-rowlink');
+        
+        (this.nodeName == 'tr' ? $(this) : $(this).find('tr:has(td)')).each(function() {
+            var link = $(this).find(target).first();
+            if (!link.length) return;
+            
+            var href = link.attr('href');
+
+            $(this).find('td').not('.nohref').click(function() {
+                window.location = href;
+            });
+
+            link.replaceWith(link.html());
+        });
     });
 })
