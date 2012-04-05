@@ -341,7 +341,7 @@ select:focus:required:invalid {
   background-color: @inputBackground;
   border-color: #eee;
   .box-shadow(inset 0 1px 2px rgba(0,0,0,.025));
-  cursor: text;
+  cursor: default;
   padding: 4px 3px 4px 5px;
 }
 .uneditable-input[disabled],
@@ -490,7 +490,7 @@ textarea.editor-html {
   }
   .add-on,
   .btn {
-    .border-radius(3px 0 0 3px);
+    .border-radius(0);
   }
   .active {
     background-color: lighten(@green, 30);
@@ -501,6 +501,10 @@ textarea.editor-html {
   .add-on,
   .btn {
     margin-right: -1px;
+  }
+  .add-on:first-child,
+  .btn:first-child {
+    .border-radius(3px 0 0 3px);
   }
 }
 .input-append {
@@ -516,6 +520,9 @@ textarea.editor-html {
   .add-on,
   .btn {
     margin-left: -1px;
+  }
+  .add-on:last-child,
+  .btn:last-child {
     .border-radius(0 3px 3px 0);
   }
 }
@@ -563,8 +570,8 @@ textarea.editor-html {
   select[disabled] {
     cursor: auto;
   }
-  .uneditable-input[disabled],
-  .uneditable-textarea[disabled] {
+  .uneditable-input,
+  .uneditable-textarea {
     cursor: text;
   }
   .form-actions {

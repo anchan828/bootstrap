@@ -39,12 +39,15 @@
     vertical-align: middle;
   }
 }
-
+.fileupload-exists .fileupload-new,
+.fileupload-new .fileupload-exists {
+  display: none;
+}
 .fileupload-inline .fileupload-controls {
   display: inline;
 }
 
-.fileupload-exists .fileupload-new,
-.fileupload-new .fileupload-exists {
-  display: none;
+// Not 100% correct, but helps in typical use case
+.fileupload-new .input-append .btn-file {
+  .border-radius(0 3px 3px 0)
 }

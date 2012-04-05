@@ -3,9 +3,8 @@
       <header class="jumbotron subhead" id="overview">
         <h1>{{_i}}Javascript for Bootstrap{{/i}}</h1>
         <p class="lead">{{_i}}Bring Bootstrap's components to life&mdash;now with 16 custom <a href="http://jquery.com/" target="_blank">jQuery</a> plugins.{{/i}}
-        <div class="subnav">
+        <div class="subnav visible-desktop">
           <ul class="nav nav-pills">
-            <li><a href="#javascript">{{_i}}All plugins{{/i}}</a></li>
             <li><a href="#modals">{{_i}}Modal{{/i}}</a></li>
             <li><a href="#dropdowns">{{_i}}Dropdown{{/i}}</a></li>
             <li><a href="#scrollspy">{{_i}}Scrollspy{{/i}}</a></li>
@@ -1590,16 +1589,16 @@ $('.carousel').carousel({
           <div class="row">
             <div class="span4 columns">
               <div class="fileupload fileupload-new" data-fileupload="file">
-                <div class="fileupload-preview fileupload-exists uneditable-input"></div>
-                <span class="btn btn-file"><span class="fileupload-new">{{_i}}Select file{{/i}}</span><span class="fileupload-exists">{{_i}}Change{{/i}}</span><input type="file" /></span>
-                <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">{{_i}}Remove{{/i}}</a>
+                <div class="input-append">
+                    <div class="uneditable-input span2"><i class="icon-file fileupload-exists"></i> <span class="fileupload-preview"></span></div><span class="btn btn-file"><span class="fileupload-new">{{_i}}Select file{{/i}}</span><span class="fileupload-exists">{{_i}}Change{{/i}}</span><input type="file" /></span><a href="#" class="btn fileupload-exists" data-dismiss="fileupload">{{_i}}Remove{{/i}}</a>
+                </div>
               </div>
             </div>
             <div class="span4 columns">
               <div class="fileupload fileupload-new" data-fileupload="file">
-                <div class="uneditable-input"><i class="icon-file fileupload-exists"></i> <span class="fileupload-preview"></span></div>
                 <span class="btn btn-file"><span class="fileupload-new">{{_i}}Select file{{/i}}</span><span class="fileupload-exists">{{_i}}Change{{/i}}</span><input type="file" /></span>
-                <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">{{_i}}Remove{{/i}}</a>
+                <span class="fileupload-preview"></span>
+                <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">{{_i}}&times;{{/i}}</a>
               </div>
             </div>
           </div>
@@ -1610,8 +1609,8 @@ $('.carousel').carousel({
           <div class="row">
             <div class="span3 columns">
               <div class="fileupload fileupload-new" data-fileupload="image">
-                <div class="fileupload-new thumbnail" style="width: 250px; height: 180px;"><img src="http://www.placehold.it/250x180/EFEFEF/AAAAAA&text=no+image" /></div>
-                <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 250px; max-height: 180px;"></div>
+                <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;"><img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image" /></div>
+                <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
                 <div>
                     <span class="btn btn-file"><span class="fileupload-new">{{_i}}Select image{{/i}}</span><span class="fileupload-exists">{{_i}}Change{{/i}}</span><input type="file" /></span>
                     <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">{{_i}}Remove{{/i}}</a>
@@ -1620,7 +1619,7 @@ $('.carousel').carousel({
             </div>
             <div class="span3 columns">
               <div class="fileupload fileupload-new" data-fileupload="image">
-                <div class="fileupload-preview thumbnail" style="width: 250px; height: 180px;"></div>
+                <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
                 <div>
                     <span class="btn btn-file"><span class="fileupload-new">{{_i}}Select image{{/i}}</span><span class="fileupload-exists">{{_i}}Change{{/i}}</span><input type="file" /></span>
                     <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">{{_i}}Remove{{/i}}</a>
