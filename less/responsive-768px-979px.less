@@ -12,4 +12,24 @@
   // Input grid
   #grid > .input(42px, 20px);
 
+  // ROWS
+  // ----
+  // Only show as a row on a desktop, not on a tablet
+  .row-desktop {
+    &.row-fluid {
+      width: 100%;
+    }
+    // Undo negative margin on rows
+    &.row {
+      margin-left: 0;
+    }
+    // Make all columns even
+    > [class*="span"],
+    > [class*="span"] {
+      float: none;
+      display: block;
+      width: auto;
+      margin: 0;
+    }
+  }
 }
