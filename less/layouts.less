@@ -15,3 +15,11 @@
   padding-right: @gridGutterWidth;
   .clearfix();
 }
+
+// Fluid container for small screens, fixed for big screens
+.container-semifluid {
+  .container-fixed();
+  padding-left: @gridGutterWidth;
+  padding-right: @gridGutterWidth;
+  max-width: @gridRowWidth;
+}
