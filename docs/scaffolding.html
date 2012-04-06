@@ -61,9 +61,9 @@
                 <a href="./less.html">Using LESS</a>
               </li>
               <li class="divider-vertical"></li>
-              <li class="">
+              <!--<li class="">
                 <a href="./download.html">Customize</a>
-              </li>
+              </li>-->
               <li class="">
                 <a href="./examples.html">Examples</a>
               </li>
@@ -439,6 +439,32 @@
 </pre>
     </div><!-- /.span -->
   </div><!-- /.row -->
+
+  <div class="row">
+    <div class="span6">
+      <h2>Semi-fluid layout</h2>
+      <p>Get the best of both worlds with <code>&lt;div class="container-semifluid"&gt;</code>. It acts as a fixed layout for big screens. For smaller screens, it behaves like a fluid layout.</p>
+      <div class="row">
+          <div class="span4">
+              <div class="mini-layout small">
+                <div class="mini-layout-body"></div>
+              </div>
+          </div>
+          <div class="span2">
+              <div class="mini-layout small fluid">
+                <div class="mini-layout-body"></div>
+              </div>
+          </div>
+      </div>
+<pre class="prettyprint linenums">
+&lt;div class="container-fluid"&gt;
+  &lt;div class="row-fluid"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </div><!-- /.span -->
+  </div><!-- /.row -->
 </section>
 
 
@@ -625,7 +651,29 @@
     </div><!-- /.span -->
   </div><!-- /.row -->
 
-
+  <!-- Desktop row -->
+  <h2>Desktop row</h2>
+  <div class="row">
+    <div class="span4">
+      <p>By default columns of a <code>.row</code> are show next to each other, however for phones the columns are show underneath each other. By adding the class <code>.row-desktop</code> to a row,
+      it will display the columns underneath each other for tablets as well.</p>
+    </div><!-- /.span -->
+    <div class="span8">
+      <h3>Test case</h3>
+      <p>Resize your browser to see the rows behave differently. They look the same for desktops and phones, but different for tablets.</p>
+      <div class="row show-grid">
+        <div class="span3">Normal row 1</div>
+        <div class="span3">Normal row 2</div>
+        <div class="span2">Normal row 3</div>
+      </div>
+      <div class="row show-grid row-desktop">
+        <div class="span3">Desktop row 1</div>
+        <div class="span3">Desktop row 2</div>
+        <div class="span2">Desktop row 3</div>
+      </div>
+    </div><!-- /.span -->
+  </div><!-- /.row -->
+      
   <div class="row">
     <div class="span4">
     </div><!-- /.span -->
@@ -640,6 +688,7 @@
         <p>Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
         <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
         <p>Icons from <a href="http://glyphicons.com">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p><a href="http://somerandomdude.com/work/iconic/">Iconic icon set</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
       </footer>
 
     </div><!-- /container -->
@@ -664,8 +713,27 @@
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-inputmask.js"></script>
+    <script src="assets/js/bootstrap-placeholder.js"></script>
+    <script src="assets/js/bootstrap-rowlink.js"></script>
+    <script src="assets/js/bootstrap-fileupload.js"></script>
     <script src="assets/js/application.js"></script>
 
+    <!-- Analytics
+    ================================================== -->
+    <script>
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
 
   </body>
 </html>
