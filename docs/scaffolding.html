@@ -444,16 +444,12 @@
     <div class="span6">
       <h2>Semi-fluid layout</h2>
       <p>Get the best of both worlds with <code>&lt;div class="container-semifluid"&gt;</code>. It acts as a fixed layout for big screens. For smaller screens, it behaves like a fluid layout.</p>
-      <div class="row">
-          <div class="span4">
-              <div class="mini-layout small">
-                <div class="mini-layout-body"></div>
-              </div>
+      <div class="semifluid-layouts">
+          <div class="mini-layout desktop">
+            <div class="mini-layout-body"></div>
           </div>
-          <div class="span2">
-              <div class="mini-layout small fluid">
-                <div class="mini-layout-body"></div>
-              </div>
+          <div class="mini-layout tablet">
+            <div class="mini-layout-body"></div>
           </div>
       </div>
 <pre class="prettyprint linenums">
@@ -719,21 +715,6 @@
     <script src="assets/js/bootstrap-fileupload.js"></script>
     <script src="assets/js/application.js"></script>
 
-    <!-- Analytics
-    ================================================== -->
-    <script>
-      var _gauges = _gauges || [];
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
-    </script>
 
   </body>
 </html>

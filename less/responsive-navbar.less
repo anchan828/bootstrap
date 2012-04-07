@@ -115,6 +115,24 @@
     overflow: hidden;
     height: 0;
   }
+
+  // UNFIX SUBNAV
+  // ------------
+  .subnav-fixed {
+    position: static;
+    border: 1px solid #e5e5e5;
+    .border-radius(4px);
+    .box-shadow(none);
+  }
+  .subnav-fixed .nav {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .subnav .nav > li:first-child > a,
+  .subnav .nav > li:first-child > a:hover {
+    .border-radius(4px 0 0 4px);
+  }
 }
 
 
