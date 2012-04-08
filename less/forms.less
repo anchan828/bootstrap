@@ -344,8 +344,8 @@ select:focus:required:invalid {
   cursor: default;
   padding: 4px 3px 4px 5px;
 }
-.uneditable-input[disabled],
-.uneditable-textarea[disabled] {
+.uneditable-input.disabled,
+.uneditable-textarea.disabled {
   background-color: #f5f5f5;
   border-color: #ddd;
   cursor: not-allowed;
@@ -565,14 +565,11 @@ textarea.editor-html {
 // ---------------
 
 .uneditable-form {
-  input[disabled],
-  textarea[disabled],
-  select[disabled] {
-    cursor: auto;
-  }
   .uneditable-input,
   .uneditable-textarea {
     cursor: text;
+    background-color: #F5F5F5;
+    border-color: #ddd;
   }
   .form-actions {
     background-color: transparent;
