@@ -2,7 +2,7 @@
 var hogan = require('hogan.js')
   , fs    = require('fs')
   , prod  = process.argv[2] == 'production'
-  , title = 'Twitter Bootstrap'
+  , title = 'Bootstrap CSS & JS (Jasny fork)'
 
 var layout, pages
 
