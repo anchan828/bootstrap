@@ -40,6 +40,7 @@ $(function () {
           }
 
           var type = container.attr('data-fileupload') == "image" ? "image" : "file";
+          input.attr('name', '');
 
           input.change(function(e) {
               hidden_input.val('');
